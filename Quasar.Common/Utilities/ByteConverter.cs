@@ -110,9 +110,10 @@ namespace Quasar.Common.Utilities
             StringBuilder strBuilder = new StringBuilder(bytes.Length);
             while (i < bytes.Length)
             {
-                //Holds the number of nulls (3 nulls indicated end of a string)
+                // Holds the number of encountered null bytes. Two consecutive null
+                // bytes indicate the end of a string entry.
                 int nullcount = 0;
-                while (i < bytes.Length && nullcount < 3)
+                while (i < bytes.Length && nullcount < 2)
                 {
                     if (bytes[i] == NULL_BYTE)
                     {
