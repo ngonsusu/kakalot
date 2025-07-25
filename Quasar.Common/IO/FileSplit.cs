@@ -49,9 +49,9 @@ namespace Quasar.Common.IO
         }
 
         /// <summary>
-        /// Writes a chunk to the file. In other words.
+        /// Writes a file chunk at the specified offset.
         /// </summary>
-        /// <param name="chunk"></param>
+        /// <param name="chunk">The chunk of data to write.</param>
         public void WriteChunk(FileChunk chunk)
         {
             _fileStream.Seek(chunk.Offset, SeekOrigin.Begin);
