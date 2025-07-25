@@ -19,7 +19,7 @@ The GUI needs to be reworked in a more modern way, such as WPF or a web-based in
 Allow clients with higher privileges (i.e. ability to administrate other lower privileged clients) connect to the server. This change would allow administrators to manage clients from their own computers with a lightweight client without having to run the server.
 
 ## Allow client installation as Windows service
-Currently the client is installed on a per-user basis and this makes it unflexible to remotly manage the machine when the user is not logged in. it also requires the client to be installed for every account who uses the machine. Machines which are used by multiple users would greatly benefit when Quasar could be run as a Windows service.
+Currently the client is installed on a per-user basis and this makes it unflexible to remotely manage the machine when the user is not logged in. it also requires the client to be installed for every account who uses the machine. Machines which are used by multiple users would greatly benefit when Quasar could be run as a Windows service.
 
 ## Basic client GUI
 Add a basic GUI to the client to allow the user at any time to check the status if a specific feature is active. Additionally it can show a notification when the client gets installed or when someone requests permission to use remote desktop (similar to teamviewer).
