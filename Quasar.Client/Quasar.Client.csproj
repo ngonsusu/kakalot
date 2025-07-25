@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net462</TargetFramework>
     <OutputType>WinExe</OutputType>
     <AssemblyName>Client</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
@@ -58,14 +58,14 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ILRepack.Lib.MSBuild.Task">
-      <Version>2.0.18.2</Version>
+      <Version>2.0.43</Version>
     </PackageReference>
     <PackageReference Include="MouseKeyHook">
-      <Version>5.6.0</Version>
+      <Version>5.7.1</Version>
     </PackageReference>
     <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
     <PackageReference Include="protobuf-net">
-      <Version>2.4.8</Version>
+      <Version>2.4.9</Version>
     </PackageReference>
   </ItemGroup>
 </Project>
