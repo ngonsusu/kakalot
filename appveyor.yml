@@ -15,6 +15,9 @@ build:
   parallel: true
   verbosity: minimal
 
+test_script:
+  - dotnet test Quasar.Common.Tests/Quasar.Common.Tests.csproj --no-build --configuration %CONFIGURATION%
+
 artifacts:
 - path: Bin
   name: binaries
